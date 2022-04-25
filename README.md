@@ -2,7 +2,15 @@ This is a [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com
 
 ## Getting Started
 
-First, run the development server:
+First, install all the dependencies:
+
+```bash
+npm i
+# or
+yarn
+```
+
+then, run the development server:
 
 ```bash
 npm run dev
