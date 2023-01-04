@@ -2,7 +2,19 @@ This is a [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com
 
 ## Run it locally
 
+<<<<<<< HEAD
 Clone the project
+=======
+First, install all the dependencies:
+
+```bash
+npm i
+# or
+yarn
+```
+
+then, run the development server:
+>>>>>>> 279bf7dae6b25710b4115e2d8848e91491427021
 
 ```bash
 
