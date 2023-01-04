@@ -1,21 +1,35 @@
 This is a [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Typescript](https://www.typescriptlang.org/) starter pack
 
-## Getting Started
+## Run it locally
 
-First, run the development server:
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
+
+git clone https://github.com/moinulmoin/nextjs-tailwind-typescript-starter project-name
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-## Learn More
+```bash
 
-To learn more about Next.js, take a look at the following resources:
+cd project-name
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js.
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs/) - learn about Tailwind CSS.
-- [Typescript Documentation](https://www.typescriptlang.org/docs/) - learn about Typescript.
+```
+
+### Or you can just download it as zip, then
+
+Install dependencies
+
+`npm install` or `yarn install`
+
+Start the server
+
+`npm run dev` or `yarn dev`
+
+Now customize everything as your needs.
+
+## Support
+
+Leave a star ⭐ if it helped you. Thank you💖
