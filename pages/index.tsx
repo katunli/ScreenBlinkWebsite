@@ -189,7 +189,7 @@ export default function ScreenBlinkHomepage() {
             <span className="text-xl font-bold text-white">ScreenBlink</span>
           </div>
           <p className="text-slate-400">
-            Take care of your eyes. They're the only pair you've got.
+            Take care of your eyes. They&apos;re the only pair you&apos;ve got.
           </p>
         </div>
       </footer>
