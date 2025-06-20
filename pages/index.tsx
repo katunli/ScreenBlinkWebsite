@@ -66,7 +66,8 @@ export default function ScreenBlinkHomepage() {
               Combat digital eye strain with intelligent blink tracking and personalized break reminders. Your eyes deserve better care.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
-              <a href="https://github.com/katunli/ScreenBlink/releases/download/v1.0.0/ScreenBlink-1.0.0.exe" className="w-full sm:w-auto group bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg transition-all duration-300 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl hover:scale-105">
+              <a href="https://github.com/katunli/ScreenBlink/releases/download/v1.0.0/ScreenBlink.Setup.1.0.0.exe
+" className="w-full sm:w-auto group bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg transition-all duration-300 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl hover:scale-105">
                 <Download className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span>Download for Windows</span>
               </a>
