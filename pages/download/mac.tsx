@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Download, Shield, CheckCircle, AlertTriangle, ArrowRight, Terminal } from 'lucide-react';
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function MacDownloadPage() {
   useEffect(() => {
@@ -91,7 +92,7 @@ export default function MacDownloadPage() {
                   <div className="flex items-start space-x-3">
                     <AlertTriangle className="w-5 h-5 text-yellow-400 mt-0.5 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold text-yellow-300 mb-2">You may see "App is damaged" error</h4>
+                      <h4 className="font-semibold text-yellow-300 mb-2">You may see &ldquo;App is damaged&rdquo; error</h4>
                       <p className="text-yellow-200 text-sm">This is normal for apps not from the App Store. Follow the steps below to fix it.</p>
                     </div>
                   </div>
@@ -101,9 +102,9 @@ export default function MacDownloadPage() {
                   <div className="flex items-start space-x-3">
                     <Shield className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold text-blue-300 mb-2">To fix the "App is damaged" error:</h4>
-                      <ol className="list-decimal list-inside space-y-1 text-blue-200 text-sm">
-                        <li>Open <strong>Terminal</strong> (press <kbd className="bg-slate-700 px-2 py-1 rounded text-xs">⌘</kbd> + <kbd className="bg-slate-700 px-2 py-1 rounded text-xs">Space</kbd>, type "Terminal", press <kbd className="bg-slate-700 px-2 py-1 rounded text-xs">Enter</kbd>)</li>
+                      <h4 className="font-semibold text-blue-300 mb-2">To fix the &ldquo;App is damaged&rdquo; error:</h4>
+                      <ol className="list-decimal list-inside space-y-1 text-blue-200 text-sm mt-3" start={3}>
+                        <li>Open <strong>Terminal</strong> (press <kbd className="bg-slate-700 px-2 py-1 rounded text-xs">⌘</kbd> + <kbd className="bg-slate-700 px-2 py-1 rounded text-xs">Space</kbd>, type &ldquo;Terminal&rdquo;, press <kbd className="bg-slate-700 px-2 py-1 rounded text-xs">Enter</kbd>)</li>
                         <li>Copy and paste this command:</li>
                       </ol>
                       <div className="bg-slate-900 border border-slate-600 rounded-lg p-3 mt-3">
@@ -111,7 +112,7 @@ export default function MacDownloadPage() {
                           xattr -cr /Applications/ScreenBlink.app
                         </code>
                       </div>
-                      <ol className="list-decimal list-inside space-y-1 text-blue-200 text-sm mt-3" start="3">
+                      <ol className="list-decimal list-inside space-y-1 text-blue-200 text-sm mt-3" start={3}>
                         <li>Press <kbd className="bg-slate-700 px-2 py-1 rounded text-xs">Enter</kbd> to run the command</li>
                         <li>Close Terminal</li>
                         <li>Now try opening ScreenBlink again</li>
@@ -166,11 +167,11 @@ export default function MacDownloadPage() {
               <div className="space-y-3 text-slate-300">
                 <p>If you encounter any issues:</p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Make sure you're running macOS 11 (Big Sur) or later</li>
+                  <li>Make sure you&apos;re running macOS 11 (Big Sur) or later</li>
                   <li>Check that you have administrator privileges</li>
                   <li>Try restarting your Mac after installation</li>
                   <li>Make sure to grant accessibility permissions in System Preferences</li>
-                  <li>Visit our <a href="https://github.com/katunli/ScreenBlink" className="text-blue-400 hover:text-blue-300 underline">GitHub page</a> for support</li>
+                  <li>Visit our <Link href="https://github.com/katunli/ScreenBlink" className="text-blue-400 hover:text-blue-300 underline">GitHub page</Link> for support</li>
                 </ul>
               </div>
             </div>
@@ -178,13 +179,13 @@ export default function MacDownloadPage() {
 
           {/* Back to Home */}
           <div className="text-center mt-8">
-            <a 
+            <Link 
               href="/" 
               className="inline-flex items-center space-x-2 bg-slate-700 hover:bg-slate-600 px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105"
             >
               <ArrowRight className="w-4 h-4 rotate-180" />
               <span>Back to Home</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Download, Shield, CheckCircle, AlertTriangle, ArrowRight } from 'lucide-react';
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function WindowsDownloadPage() {
   useEffect(() => {
@@ -87,8 +88,8 @@ export default function WindowsDownloadPage() {
                     <div>
                       <h4 className="font-semibold text-blue-300 mb-2">If you see a security warning:</h4>
                       <ol className="list-decimal list-inside space-y-1 text-blue-200 text-sm">
-                        <li>Click the <strong>"More info"</strong> link</li>
-                        <li>Click <strong>"Run anyway"</strong> button</li>
+                        <li>Click the <strong>&ldquo;More info&rdquo;</strong> link</li>
+                        <li>Click <strong>&ldquo;Run anyway&rdquo;</strong> button</li>
                         <li>The installer will now start</li>
                       </ol>
                     </div>
@@ -105,11 +106,11 @@ export default function WindowsDownloadPage() {
               <div className="space-y-4 text-slate-300">
                 <p>Follow the installation wizard:</p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Click <strong>"Next"</strong> to proceed through each step</li>
+                  <li>Click <strong>&ldquo;Next&rdquo;</strong> to proceed through each step</li>
                   <li>Accept the default installation location</li>
-                  <li>Click <strong>"Install"</strong> when ready</li>
+                  <li>Click <strong>&ldquo;Install&rdquo;</strong> when ready</li>
                   <li>Wait for the installation to complete</li>
-                  <li>Click <strong>"Finish"</strong> when done</li>
+                  <li>Click <strong>&ldquo;Finish&rdquo;</strong> when done</li>
                 </ul>
               </div>
             </div>
@@ -123,7 +124,7 @@ export default function WindowsDownloadPage() {
                 <p>After installation:</p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
                   <li>ScreenBlink will start automatically</li>
-                  <li>You'll see a small icon in your system tray (bottom-right corner)</li>
+                  <li>You&apos;ll see a small icon in your system tray (bottom-right corner)</li>
                   <li>The app will begin monitoring your blink rate</li>
                   <li>You can right-click the tray icon to access settings</li>
                 </ul>
@@ -138,9 +139,9 @@ export default function WindowsDownloadPage() {
               <div className="space-y-3 text-slate-300">
                 <p>If you encounter any issues:</p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Make sure you're running Windows 10 or Windows 11</li>
-                  <li>Try running the installer as administrator (right-click → "Run as administrator")</li>
-                  <li>Check that your antivirus isn't blocking the installation</li>
+                  <li>Make sure you&apos;re running Windows 10 or Windows 11</li>
+                  <li>Try running the installer as administrator (right-click → &ldquo;Run as administrator&rdquo;)</li>
+                  <li>Check that your antivirus isn&apos;t blocking the installation</li>
                   <li>Visit our <a href="https://github.com/katunli/ScreenBlink" className="text-blue-400 hover:text-blue-300 underline">GitHub page</a> for support</li>
                 </ul>
               </div>
@@ -149,13 +150,13 @@ export default function WindowsDownloadPage() {
 
           {/* Back to Home */}
           <div className="text-center mt-8">
-            <a 
+            <Link 
               href="/" 
               className="inline-flex items-center space-x-2 bg-slate-700 hover:bg-slate-600 px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105"
             >
               <ArrowRight className="w-4 h-4 rotate-180" />
               <span>Back to Home</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
