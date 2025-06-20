@@ -47,7 +47,8 @@ export default function ScreenBlinkHomepage() {
           <div className="hidden md:flex space-x-6 lg:space-x-8">
             <a href="#features" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">Features</a>
             <a href="#about" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">About</a>
-            <a href="#download" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">Download</a>
+            <a href="/download/windows" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">Windows</a>
+            <a href="/download/mac" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">Mac</a>
           </div>
           <button className="md:hidden p-2 text-slate-300 hover:text-white">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -66,12 +67,11 @@ export default function ScreenBlinkHomepage() {
               Combat digital eye strain with intelligent blink tracking and personalized break reminders. Your eyes deserve better care.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
-              <a href="https://github.com/katunli/ScreenBlink/releases/download/v1.0.0/ScreenBlink.Setup.1.0.0.exe
-" className="w-full sm:w-auto group bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg transition-all duration-300 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl hover:scale-105">
+              <a href="/download/windows" className="w-full sm:w-auto group bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg transition-all duration-300 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl hover:scale-105">
                 <Download className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span>Download for Windows</span>
               </a>
-              <a href="https://github.com/katunli/ScreenBlink/releases/download/v1.0.0/ScreenBlink-1.0.0-arm64.dmg" className="w-full sm:w-auto group bg-slate-700 hover:bg-slate-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg transition-all duration-300 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl hover:scale-105">
+              <a href="/download/mac" className="w-full sm:w-auto group bg-slate-700 hover:bg-slate-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg transition-all duration-300 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl hover:scale-105">
                 <Download className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span>Download for Mac</span>
               </a>
@@ -160,7 +160,7 @@ export default function ScreenBlinkHomepage() {
             <div className="bg-slate-800/80 backdrop-blur-sm p-4 sm:p-6 rounded-2xl border border-slate-700/50 flex-1 hover:border-blue-500/50 transition-all duration-300">
               <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-white">Windows</h3>
               <p className="text-sm sm:text-base text-slate-300 mb-4 sm:mb-6">Compatible with Windows 10 and 11</p>
-              <a href="https://github.com/katunli/ScreenBlink/releases/download/v1.0.0/ScreenBlink-1.0.0.exe" className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold text-sm sm:text-base transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105">
+              <a href="/download/windows" className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold text-sm sm:text-base transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105">
                 <Download className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span>Download .exe</span>
               </a>
@@ -169,7 +169,7 @@ export default function ScreenBlinkHomepage() {
             <div className="bg-slate-800/80 backdrop-blur-sm p-4 sm:p-6 rounded-2xl border border-slate-700/50 flex-1 hover:border-blue-500/50 transition-all duration-300">
               <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-white">macOS</h3>
               <p className="text-sm sm:text-base text-slate-300 mb-4 sm:mb-6">Compatible with macOS 11 and later</p>
-              <a href="https://github.com/katunli/ScreenBlink/releases/download/v1.0.0/ScreenBlink-1.0.0-arm64.dmg" className="w-full bg-slate-700 hover:bg-slate-600 px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold text-sm sm:text-base transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105">
+              <a href="/download/mac" className="w-full bg-slate-700 hover:bg-slate-600 px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold text-sm sm:text-base transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-105">
                 <Download className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span>Download .dmg</span>
               </a>
