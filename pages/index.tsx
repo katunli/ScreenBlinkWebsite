@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Download, Eye, Monitor, Shield, Clock, Zap, ChevronDown } from 'lucide-react';
+import Link from 'next/link';
 
 export default function ScreenBlinkHomepage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -13,12 +14,12 @@ export default function ScreenBlinkHomepage() {
     {
       icon: <Eye className="w-8 h-8" />,
       title: "Blink Tracking",
-      description: "Real-time monitoring of your blink rate to prevent dry eyes"
+      description: "Real-time monitoring of your blink rate to prevent strained dry eyes"
     },
     {
       icon: <Clock className="w-8 h-8" />,
       title: "Smart Reminders",
-      description: "Customizable break reminders based on your work patterns"
+      description: "Customizable blink reminders based on your work patterns"
     },
     {
       icon: <Shield className="w-8 h-8" />,
@@ -45,10 +46,10 @@ export default function ScreenBlinkHomepage() {
             <span className="text-xl sm:text-2xl font-bold text-white tracking-tight">ScreenBlink</span>
           </div>
           <div className="hidden md:flex space-x-6 lg:space-x-8">
-            <a href="#features" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">Features</a>
-            <a href="#about" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">About</a>
-            <a href="/download/windows" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">Windows</a>
-            <a href="/download/mac" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">Mac</a>
+            <Link href="#features" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">Features</Link>
+            <Link href="#about" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">About</Link>
+            <Link href="/download/windows" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">Windows</Link>
+            <Link href="/download/mac" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">Mac</Link>
           </div>
           <button className="md:hidden p-2 text-slate-300 hover:text-white">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
