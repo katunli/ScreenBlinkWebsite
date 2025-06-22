@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Download, Shield, CheckCircle, AlertTriangle, ArrowRight } from 'lucide-react';
+import { Download, CheckCircle, ArrowRight } from 'lucide-react';
 import Head from 'next/head';
 import Link from 'next/link';
 
@@ -52,98 +52,20 @@ export default function WindowsDownloadPage() {
             <div className="bg-slate-800/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-slate-700/30">
               <h2 className="text-2xl font-bold mb-6 text-white flex items-center">
                 <span className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">1</span>
-                Find the Downloaded File
+                Open the EXE
               </h2>
-              <div className="space-y-4 text-slate-300">
-                <p>Once the download is complete:</p>
-                <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Open your <strong>Downloads folder</strong></li>
-                  <li>Look for the file named <code className="bg-slate-700 px-2 py-1 rounded">ScreenBlink.Setup.1.0.0.exe</code></li>
-                  <li>The file should have a blue icon with a shield</li>
-                </ul>
+              <div className="text-slate-300">
+                <p>Double-click <code className="bg-slate-700 px-2 py-1 rounded">ScreenBlink.Setup.1.0.0.exe</code> in Downloads, or open it from the top right of your browser</p>
               </div>
             </div>
 
             <div className="bg-slate-800/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-slate-700/30">
               <h2 className="text-2xl font-bold mb-6 text-white flex items-center">
                 <span className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">2</span>
-                Run the Installer
+                Click "More Info" and "Run Anyway"
               </h2>
-              <div className="space-y-4 text-slate-300">
-                <p>Double-click the <code className="bg-slate-700 px-2 py-1 rounded">ScreenBlink.Setup.1.0.0.exe</code> file</p>
-                
-                <div className="bg-yellow-900/30 border border-yellow-500/50 rounded-xl p-4">
-                  <div className="flex items-start space-x-3">
-                    <AlertTriangle className="w-5 h-5 text-yellow-400 mt-0.5 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-semibold text-yellow-300 mb-2">Windows Security Warning</h4>
-                      <p className="text-yellow-200 text-sm">You may see a security warning. This is normal for new applications.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-blue-900/30 border border-blue-500/50 rounded-xl p-4">
-                  <div className="flex items-start space-x-3">
-                    <Shield className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-semibold text-blue-300 mb-2">If you see a security warning:</h4>
-                      <ol className="list-decimal list-inside space-y-1 text-blue-200 text-sm">
-                        <li>Click the <strong>&ldquo;More info&rdquo;</strong> link</li>
-                        <li>Click <strong>&ldquo;Run anyway&rdquo;</strong> button</li>
-                        <li>The installer will now start</li>
-                      </ol>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-slate-800/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-slate-700/30">
-              <h2 className="text-2xl font-bold mb-6 text-white flex items-center">
-                <span className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">3</span>
-                Complete Installation
-              </h2>
-              <div className="space-y-4 text-slate-300">
-                <p>Follow the installation wizard:</p>
-                <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Click <strong>&ldquo;Next&rdquo;</strong> to proceed through each step</li>
-                  <li>Accept the default installation location</li>
-                  <li>Click <strong>&ldquo;Install&rdquo;</strong> when ready</li>
-                  <li>Wait for the installation to complete</li>
-                  <li>Click <strong>&ldquo;Finish&rdquo;</strong> when done</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-slate-800/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-slate-700/30">
-              <h2 className="text-2xl font-bold mb-6 text-white flex items-center">
-                <span className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">4</span>
-                Start Using ScreenBlink
-              </h2>
-              <div className="space-y-4 text-slate-300">
-                <p>After installation:</p>
-                <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>ScreenBlink will start automatically</li>
-                  <li>You&apos;ll see a small icon in your system tray (bottom-right corner)</li>
-                  <li>The app will begin monitoring your blink rate</li>
-                  <li>You can right-click the tray icon to access settings</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Troubleshooting */}
-          <div className="max-w-4xl mx-auto mt-8">
-            <div className="bg-slate-800/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-slate-700/30">
-              <h3 className="text-xl font-bold mb-4 text-white">Need Help?</h3>
-              <div className="space-y-3 text-slate-300">
-                <p>If you encounter any issues:</p>
-                <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Make sure you&apos;re running Windows 10 or Windows 11</li>
-                  <li>Try running the installer as administrator (right-click → &ldquo;Run as administrator&rdquo;)</li>
-                  <li>Check that your antivirus isn&apos;t blocking the installation</li>
-                  <li>Visit our <a href="https://github.com/katunli/ScreenBlink" className="text-blue-400 hover:text-blue-300 underline">GitHub page</a> for support</li>
-                </ul>
+              <div className="text-slate-300">
+                <p>If you see a security warning, click "More info" then "Run anyway"</p>
               </div>
             </div>
           </div>
