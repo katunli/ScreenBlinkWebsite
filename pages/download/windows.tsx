@@ -62,10 +62,10 @@ export default function WindowsDownloadPage() {
             <div className="bg-slate-800/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-slate-700/30">
               <h2 className="text-2xl font-bold mb-6 text-white flex items-center">
                 <span className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">2</span>
-                Click "More Info" and "Run Anyway"
+                Click &ldquo;More Info&rdquo; and &ldquo;Run Anyway&rdquo;
               </h2>
               <div className="text-slate-300">
-                <p>If you see a security warning, click "More info" then "Run anyway"</p>
+                <p>If you see a security warning, click &ldquo;More info&rdquo; then &ldquo;Run anyway&rdquo;</p>
               </div>
             </div>
           </div>
