@@ -14,23 +14,23 @@ export default function ScreenBlinkHomepage() {
     {
       icon: <Eye className="w-8 h-8" />,
       title: "Blink Tracking",
-      description: "Real-time monitoring of your blink rate to prevent strained dry eyes"
-    },
-    {
-      icon: <Clock className="w-8 h-8" />,
-      title: "Smart Reminders",
-      description: "Customizable blink reminders based on your work patterns"
-    },
-    {
-      icon: <Shield className="w-8 h-8" />,
-      title: "Eye Protection",
-      description: "Reduce digital eye strain with intelligent screen break alerts"
+      description: "Real-time monitoring of your blinks to prevent strained dry eyes"
     },
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Lightweight",
       description: "Runs efficiently in the background without slowing your system"
-    }
+    },
+    {
+      icon: <Clock className="w-8 h-8" />,
+      title: "Smart Reminders",
+      description: "Customizable blink reminders you can design and place anywhere on your screen"
+    },
+    {
+      icon: <Shield className="w-8 h-8" />,
+      title: "Eye Protection",
+      description: "Reduce digital eye strain with timed screen break alerts"
+    },
   ];
 
   return (
@@ -124,7 +124,7 @@ export default function ScreenBlinkHomepage() {
                   <span className="leading-tight">What is Digital Eye Strain?</span>
                 </h3>
                 <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-                  Digital eye strain, also known as Computer Vision Syndrome, affects millions of people who spend extended periods looking at digital screens. Symptoms include dry eyes, blurred vision, headaches, and neck pain. The average person blinks 15-20 times per minute, but this rate can drop by up to 60% when focused on screens.
+                  Digital eye strain, also known as Computer Vision Syndrome, affects millions of people who spend extended periods looking at digital screens. Symptoms include dry eyes, blurred vision, headaches, and neck pain. The average person blinks 15-20 times per minute, but this can drop to 5-7 when focused on screens.
                 </p>
               </div>
 
@@ -141,7 +141,7 @@ export default function ScreenBlinkHomepage() {
               <div className="bg-slate-800/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-slate-700/30">
                 <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-blue-300">How ScreenBlink Helps</h3>
                 <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-                  Our intelligent monitoring system tracks your blink rate in real-time and provides gentle reminders when you need to blink more or take a break. By following the 20-20-20 rule and maintaining healthy blinking habits, you can significantly reduce eye strain and maintain better eye health throughout your workday.
+                  Our intelligent monitoring system tracks your blinks in real-time and provides gentle reminders when you need to blink more or take a break. By following the 20-20-20 rule and maintaining healthy blinking habits, you can significantly reduce eye strain and maintain better eye health throughout your workday.
                 </p>
               </div>
             </div>
@@ -177,7 +177,7 @@ export default function ScreenBlinkHomepage() {
             </div>
           </div>
           
-          <p className="text-slate-400 mt-6 sm:mt-8 text-sm sm:text-base px-4">Free download • No registration required • Lightweight & secure</p>
+          <p className="text-slate-400 mt-6 sm:mt-8 text-sm sm:text-base px-4">Free download • No registration required • Lightweight & secure • Open source</p>
         </div>
       </section>
 

@@ -1,9 +1,21 @@
 import React, { useEffect } from 'react';
-import { Download, CheckCircle, ArrowRight } from 'lucide-react';
+import { Download, CheckCircle, ArrowRight, Copy, Check, Command } from 'lucide-react';
 import Head from 'next/head';
 import Link from 'next/link';
 
 export default function MacDownloadPage() {
+  const [copied, setCopied] = React.useState(false);
+
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText('xattr -cr /Applications/ScreenBlink.app');
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  };
+
   useEffect(() => {
     // Auto-download the file
     const link = document.createElement('a');
@@ -75,13 +87,31 @@ export default function MacDownloadPage() {
                 Run Command
               </h2>
               <div className="text-slate-300">
-                <p>Open Terminal and run:</p>
-                <div className="bg-slate-900 border border-slate-600 rounded-lg p-3 mt-3">
+                <p><strong>Open Terminal:</strong></p>
+                <ul className="list-disc list-inside text-sm text-slate-400 mb-3 space-y-1">
+                  <li>Press <code className="bg-slate-700 px-1 py-0.5 rounded inline-flex items-center gap-1"><Command className="w-3 h-3" /> + Space</code> to open Spotlight</li>
+                  <li>Type "Terminal" and press Enter</li>
+                </ul>
+                <p>Copy and paste this command into Terminal, then press Enter: </p>
+                <div className="bg-slate-900 border border-slate-600 rounded-lg p-3 mt-3 relative">
                   <code className="text-green-400 text-sm">
                     xattr -cr /Applications/ScreenBlink.app
                   </code>
+                  <button
+                    onClick={copyToClipboard}
+                    className="absolute top-2 right-2 p-1.5 rounded-md bg-slate-700 hover:bg-slate-600 transition-colors duration-200"
+                    title="Copy command"
+                  >
+                    {copied ? (
+                      <Check className="w-4 h-4 text-green-400" />
+                    ) : (
+                      <Copy className="w-4 h-4 text-slate-300" />
+                    )}
+                  </button>
                 </div>
-                <p className="text-sm text-slate-400 mt-3">This takes care of macOS restrictions that prevent apps from outside the App Store from running.</p>
+                <p className="text-sm text-slate-400 mt-3">
+                  This takes care of macOS restrictions that prevent apps from outside the App Store from running.
+                </p>
               </div>
             </div>
 
