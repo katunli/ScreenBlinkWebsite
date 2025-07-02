@@ -90,7 +90,7 @@ export default function MacDownloadPage() {
                 <p><strong>Open Terminal:</strong></p>
                 <ul className="list-disc list-inside text-sm text-slate-400 mb-3 space-y-1">
                   <li>Press <code className="bg-slate-700 px-1 py-0.5 rounded inline-flex items-center gap-1"><Command className="w-3 h-3" /> + Space</code> to open Spotlight</li>
-                  <li>Type "Terminal" and press Enter</li>
+                  <li>Type &ldquo;Terminal&rdquo; and press Enter</li>
                 </ul>
                 <p>Copy and paste this command into Terminal, then press Enter: </p>
                 <div className="bg-slate-900 border border-slate-600 rounded-lg p-3 mt-3 relative">
