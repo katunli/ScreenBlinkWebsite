@@ -121,7 +121,10 @@ export default function MacDownloadPage() {
                 Open the App
               </h2>
               <div className="text-slate-300">
-                <p>Open ScreenBlink from Applications</p>
+                <p>Open ScreenBlink from Applications folder</p>
+                <p className="text-sm text-slate-400 italic mt-2">
+                  <strong>Tip:</strong> You can also use Spotlight to quickly open ScreenBlink anytime! Press <code className="bg-slate-700 px-1 py-0.5 rounded inline-flex items-center gap-1"><Command className="w-3 h-3" /> + Space</code>, type &ldquo;ScreenBlink&rdquo;, and press Enter.
+                </p>
               </div>
             </div>
           </div>
