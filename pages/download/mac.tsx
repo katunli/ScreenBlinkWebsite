@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
-import { Download, CheckCircle, ArrowRight, Copy, Check, Command } from 'lucide-react';
+import { Download, CheckCircle, ArrowRight, Copy, Check, Command, AlertTriangle } from 'lucide-react';
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function MacDownloadPage() {
   const [copied, setCopied] = React.useState(false);
@@ -55,6 +56,46 @@ export default function MacDownloadPage() {
               <div>
                 <h3 className="text-lg font-semibold text-green-300">Download Started</h3>
                 <p className="text-green-200">ScreenBlink-1.0.0-arm64.dmg is downloading to your Downloads folder</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Warning Notice */}
+          <div className="bg-amber-900/30 border border-amber-500/50 rounded-2xl p-4 mb-8">
+            <div className="flex items-start space-x-3">
+              <AlertTriangle className="w-5 h-5 text-amber-400 mt-1 flex-shrink-0" />
+              <div className="flex-1">
+                <h3 className="text-base font-semibold text-amber-300 mb-2">Security Warning Expected</h3>
+                <p className="text-amber-200 mb-3 text-sm">
+                  macOS will show a security warning when you first open ScreenBlink. This is normal for non-App Store apps.
+                </p>
+                <div className="bg-slate-800/60 rounded-lg p-3 mb-3">
+                  <p className="text-amber-100 text-xs mb-2 font-medium">You&apos;ll see this popup:</p>
+                  <div className="relative w-full max-w-sm mx-auto">
+                    <Image 
+                      src="/warning.jpeg" 
+                      alt="macOS security warning popup" 
+                      width={300} 
+                      height={225}
+                      className="rounded-lg border border-slate-600"
+                    />
+                  </div>
+                </div>
+                <p className="text-amber-200 text-xs">
+                  <strong>Don&apos;t worry!</strong> We&apos;ll show you how to fix this in the steps below.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Scroll Indicator */}
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center space-x-2 text-slate-400 text-sm">
+              <span>Scroll down for installation steps</span>
+              <div className="animate-bounce">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
               </div>
             </div>
           </div>
