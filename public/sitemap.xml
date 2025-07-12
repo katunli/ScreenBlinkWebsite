@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://screenblink.com/</loc>
+    <loc>https://screenblink.vercel.app/</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://screenblink.com/eye-strain-guide</loc>
+    <loc>https://screenblink.vercel.app/eye-strain-guide</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://screenblink.com/faq</loc>
+    <loc>https://screenblink.vercel.app/faq</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://screenblink.com/blog/eye-strain-prevention</loc>
+    <loc>https://screenblink.vercel.app/blog/eye-strain-prevention</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://screenblink.com/download/windows</loc>
+    <loc>https://screenblink.vercel.app/download/windows</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://screenblink.com/download/mac</loc>
+    <loc>https://screenblink.vercel.app/download/mac</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
