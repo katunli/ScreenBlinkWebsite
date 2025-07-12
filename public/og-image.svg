@@ -1,0 +1,31 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#334155;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Background Pattern -->
+  <circle cx="200" cy="150" r="80" fill="#3b82f6" opacity="0.1"/>
+  <circle cx="1000" cy="480" r="120" fill="#3b82f6" opacity="0.1"/>
+  
+  <!-- Main Content -->
+  <g transform="translate(100, 150)">
+    <!-- Icon -->
+    <circle cx="60" cy="60" r="50" fill="#3b82f6"/>
+    <path d="M40 60 Q50 50 60 60 Q70 70 80 60" stroke="white" stroke-width="3" fill="none"/>
+    <circle cx="45" cy="55" r="3" fill="white"/>
+    <circle cx="75" cy="55" r="3" fill="white"/>
+    
+    <!-- Text -->
+    <text x="130" y="40" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white">ScreenBlink</text>
+    <text x="130" y="80" font-family="Arial, sans-serif" font-size="24" fill="#cbd5e1">Protect Your Eyes from Digital Eye Strain</text>
+    <text x="130" y="110" font-family="Arial, sans-serif" font-size="18" fill="#94a3b8">Eye Strain Relief • Dry Eye Treatment • Computer Vision Syndrome</text>
+  </g>
+  
+  <!-- Bottom Text -->
+  <text x="100" y="550" font-family="Arial, sans-serif" font-size="20" fill="#cbd5e1">Free Software for Eye Health • Download Today</text>
+</svg> 

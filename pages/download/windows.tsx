@@ -65,7 +65,7 @@ export default function WindowsDownloadPage() {
                 Get past the security warning
               </h2>
               <div className="text-slate-300">
-                <p>Click &ldquo;More info&rdquo; then &ldquo;Run anyway&rdquo;</p>
+                <p>Click &ldquo;More info&rdquo; near the top left and then click &ldquo;Run anyway&rdquo;</p>
                 <p className="text-sm text-slate-400 italic mt-2">This warning is simply because ScreenBlink is not from the Microsoft Store</p>
               </div>
             </div>
