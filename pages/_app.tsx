@@ -37,6 +37,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="msapplication-TileColor" content="#1e40af" />
         <link rel="canonical" href="https://screenblink.com/" />
         
+        {/* Google Site Verification */}
+        <meta name="google-site-verification" content="_4u4BGFu6JT0zfCF0xrPSG5aDTZA1ncs8-bBXR7On2w" />
+        
         {/* Structured Data */}
         <script
           type="application/ld+json"

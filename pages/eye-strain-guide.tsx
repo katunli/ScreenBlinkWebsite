@@ -258,7 +258,7 @@ export default function EyeStrainGuide() {
                 <div>
                   <h3 className="font-semibold text-blue-300 mb-2">Real-time Blink Monitoring</h3>
                   <p className="text-sm">
-                    Tracks your blink rate and alerts you when you're not blinking enough, helping prevent dry eyes and computer strain.
+                    Tracks your blink rate and alerts you when you&apos;re not blinking enough, helping prevent dry eyes and computer strain.
                   </p>
                 </div>
                 <div>
@@ -287,7 +287,7 @@ export default function EyeStrainGuide() {
           <div className="text-center bg-slate-800/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-slate-700/30">
             <h2 className="text-2xl font-bold mb-4 text-white">Ready to Protect Your Eyes?</h2>
             <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
-              Start combating digital eye strain, dry eyes, and computer vision syndrome today with ScreenBlink's intelligent eye strain relief system.
+              Start combating digital eye strain, dry eyes, and computer vision syndrome today with ScreenBlink&apos;s intelligent eye strain relief system.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link href="/download/windows" className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 px-6 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center space-x-2 hover:scale-105">

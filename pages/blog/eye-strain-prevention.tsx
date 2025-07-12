@@ -85,7 +85,7 @@ export default function EyeStrainPreventionBlog() {
             {/* Introduction */}
             <div className="bg-slate-800/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-slate-700/30 mb-8">
               <p className="text-slate-300 text-lg leading-relaxed">
-                With the average person spending over 7 hours per day in front of screens, digital eye strain has become a widespread concern. In this comprehensive guide, we'll explore 10 proven methods to prevent dry eyes, computer vision syndrome, and maintain optimal eye health in the digital age.
+                With the average person spending over 7 hours per day in front of screens, digital eye strain has become a widespread concern. In this comprehensive guide, we&apos;ll explore 10 proven methods to prevent dry eyes, computer vision syndrome, and maintain optimal eye health in the digital age.
               </p>
             </div>
 
