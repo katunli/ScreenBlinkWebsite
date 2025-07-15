@@ -69,6 +69,17 @@ export default function WindowsDownloadPage() {
                 <p className="text-sm text-slate-400 italic mt-2">This warning is simply because ScreenBlink is not from the Microsoft Store</p>
               </div>
             </div>
+
+            <div className="bg-slate-800/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-slate-700/30">
+              <h2 className="text-2xl font-bold mb-6 text-white flex items-center">
+                <span className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">3</span>
+                Follow the installer
+              </h2>
+              <div className="text-slate-300">
+                <p>Read through the installer that pops up and click through the prompts to complete the installation</p>
+                <p className="text-sm text-slate-400 italic mt-2">The installer will guide you through the setup process step by step</p>
+              </div>
+            </div>
           </div>
 
           {/* Back to Home */}
