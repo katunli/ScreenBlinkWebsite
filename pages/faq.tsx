@@ -31,11 +31,11 @@ export default function FAQPage() {
     },
     {
       question: "What operating systems does ScreenBlink support?",
-      answer: "ScreenBlink is available for both Windows (Windows 10 and 11) and macOS (macOS 11 and later). The software works on both Intel and Apple Silicon Macs."
+      answer: "ScreenBlink is available for both Windows (Windows 10 and 11) and macOS (macOS 11 and later). Although it only runs on ARM Macs at the moment."
     },
     {
       question: "How does ScreenBlink protect my privacy?",
-      answer: "ScreenBlink processes all data locally on your device. No images or personal data are ever sent to our servers. The software only monitors blink patterns to provide eye strain relief and dry eye treatment."
+      answer: "ScreenBlink processes all data locally on your device. No images or personal data are ever sent to our servers. The software only monitors blink patterns to provide eye strain relief and dry eye treatment. It can even be used without an internet connection."
     },
     {
       question: "Will ScreenBlink slow down my computer?",

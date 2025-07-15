@@ -65,9 +65,9 @@ export default function MacDownloadPage() {
             <div className="flex items-start space-x-3">
               <AlertTriangle className="w-5 h-5 text-amber-400 mt-1 flex-shrink-0" />
               <div className="flex-1">
-                <h3 className="text-base font-semibold text-amber-300 mb-2">Security Warning Expected</h3>
+                <h3 className="text-base font-semibold text-amber-300 mb-2">IMPORTANT: Security Warning Expected</h3>
                 <p className="text-amber-200 mb-3 text-sm">
-                  macOS will show a security warning when you first open ScreenBlink. This is normal for non-App Store apps.
+                  macOS will show a security warning when you first open ScreenBlink. This is NORMAL for non-App Store apps.
                 </p>
                 <div className="bg-slate-800/60 rounded-lg p-3 mb-3">
                   <p className="text-amber-100 text-xs mb-2 font-medium">You&apos;ll see this popup:</p>
