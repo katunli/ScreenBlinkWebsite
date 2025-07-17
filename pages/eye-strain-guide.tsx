@@ -15,13 +15,13 @@ export default function EyeStrainGuide() {
         <meta property="og:title" content="Complete Guide to Digital Eye Strain & Dry Eyes - Prevention & Treatment" />
         <meta property="og:description" content="Learn about digital eye strain, dry eyes, computer vision syndrome, and red eyes. Discover prevention methods, symptoms, and treatment options including ScreenBlink software." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://screenblink.com/eye-strain-guide" />
+        <meta property="og:url" content="https://screenblink.vercel.app/eye-strain-guide" />
         
         {/* Twitter */}
         <meta property="twitter:title" content="Complete Guide to Digital Eye Strain & Dry Eyes - Prevention & Treatment" />
         <meta property="twitter:description" content="Learn about digital eye strain, dry eyes, computer vision syndrome, and red eyes. Discover prevention methods, symptoms, and treatment options including ScreenBlink software." />
         
-        <link rel="canonical" href="https://screenblink.com/eye-strain-guide" />
+        <link rel="canonical" href="https://screenblink.vercel.app/eye-strain-guide" />
         
         {/* Breadcrumb Schema */}
         <script
@@ -35,13 +35,13 @@ export default function EyeStrainGuide() {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://screenblink.com/"
+                  "item": "https://screenblink.vercel.app/"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Eye Strain Guide",
-                  "item": "https://screenblink.com/eye-strain-guide"
+                  "item": "https://screenblink.vercel.app/eye-strain-guide"
                 }
               ]
             })

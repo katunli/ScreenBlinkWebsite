@@ -15,7 +15,7 @@ export default function EyeStrainPreventionBlog() {
         <meta property="og:title" content="10 Proven Ways to Prevent Digital Eye Strain in 2024 - Complete Guide" />
         <meta property="og:description" content="Discover 10 proven methods to prevent digital eye strain, dry eyes, and computer vision syndrome. Learn about the 20-20-20 rule, blink tracking, and ScreenBlink software for eye strain relief." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://screenblink.com/blog/eye-strain-prevention" />
+        <meta property="og:url" content="https://screenblink.vercel.app/blog/eye-strain-prevention" />
         <meta property="article:published_time" content="2024-01-15T00:00:00.000Z" />
         <meta property="article:author" content="ScreenBlink Team" />
         
@@ -23,7 +23,7 @@ export default function EyeStrainPreventionBlog() {
         <meta property="twitter:title" content="10 Proven Ways to Prevent Digital Eye Strain in 2024 - Complete Guide" />
         <meta property="twitter:description" content="Discover 10 proven methods to prevent digital eye strain, dry eyes, and computer vision syndrome. Learn about the 20-20-20 rule, blink tracking, and ScreenBlink software for eye strain relief." />
         
-        <link rel="canonical" href="https://screenblink.com/blog/eye-strain-prevention" />
+        <link rel="canonical" href="https://screenblink.vercel.app/blog/eye-strain-prevention" />
         
         {/* Article Schema */}
         <script
@@ -43,14 +43,14 @@ export default function EyeStrainPreventionBlog() {
                 "name": "ScreenBlink",
                 "logo": {
                   "@type": "ImageObject",
-                  "url": "https://screenblink.com/logo.png"
+                  "url": "https://screenblink.vercel.app/logo.png"
                 }
               },
               "datePublished": "2024-01-15T00:00:00.000Z",
               "dateModified": "2024-01-15T00:00:00.000Z",
               "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": "https://screenblink.com/blog/eye-strain-prevention"
+                "@id": "https://screenblink.vercel.app/blog/eye-strain-prevention"
               },
               "keywords": "prevent digital eye strain, eye strain prevention tips, computer vision syndrome prevention, dry eyes prevention, reduce eye strain, eye strain relief methods, computer strain prevention, screen time eye protection"
             })

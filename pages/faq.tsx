@@ -58,13 +58,13 @@ export default function FAQPage() {
         <meta property="og:title" content="FAQ - ScreenBlink Eye Strain Relief & Dry Eye Treatment" />
         <meta property="og:description" content="Frequently asked questions about ScreenBlink, digital eye strain, dry eyes, and computer vision syndrome. Learn how our software provides eye strain relief and dry eye treatment." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://screenblink.com/faq" />
+        <meta property="og:url" content="https://screenblink.vercel.app/faq" />
         
         {/* Twitter */}
         <meta property="twitter:title" content="FAQ - ScreenBlink Eye Strain Relief & Dry Eye Treatment" />
         <meta property="twitter:description" content="Frequently asked questions about ScreenBlink, digital eye strain, dry eyes, and computer vision syndrome. Learn how our software provides eye strain relief and dry eye treatment." />
         
-        <link rel="canonical" href="https://screenblink.com/faq" />
+        <link rel="canonical" href="https://screenblink.vercel.app/faq" />
         
         {/* FAQ Schema */}
         <script

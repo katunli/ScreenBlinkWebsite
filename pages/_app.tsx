@@ -19,23 +19,23 @@ function MyApp({ Component, pageProps }: AppProps) {
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://screenblink.com/" />
+        <meta property="og:url" content="https://screenblink.vercel.app/" />
         <meta property="og:title" content="ScreenBlink - Protect Your Eyes from Digital Eye Strain & Dry Eyes" />
         <meta property="og:description" content="Combat digital eye strain, dry eyes, and computer vision syndrome with intelligent blink tracking. Free software to reduce eye strain and prevent red eyes from screen time." />
-        <meta property="og:image" content="https://screenblink.com/og-image.svg" />
+        <meta property="og:image" content="https://screenblink.vercel.app/og-image.svg" />
         <meta property="og:site_name" content="ScreenBlink" />
         
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://screenblink.com/" />
+        <meta property="twitter:url" content="https://screenblink.vercel.app/" />
         <meta property="twitter:title" content="ScreenBlink - Protect Your Eyes from Digital Eye Strain & Dry Eyes" />
         <meta property="twitter:description" content="Combat digital eye strain, dry eyes, and computer vision syndrome with intelligent blink tracking. Free software to reduce eye strain and prevent red eyes from screen time." />
-        <meta property="twitter:image" content="https://screenblink.com/og-image.svg" />
+        <meta property="twitter:image" content="https://screenblink.vercel.app/og-image.svg" />
         
         {/* Additional SEO Meta Tags */}
         <meta name="theme-color" content="#1e40af" />
         <meta name="msapplication-TileColor" content="#1e40af" />
-        <link rel="canonical" href="https://screenblink.com/" />
+        <link rel="canonical" href="https://screenblink.vercel.app/" />
         
         {/* Google Site Verification */}
         <meta name="google-site-verification" content="_4u4BGFu6JT0zfCF0xrPSG5aDTZA1ncs8-bBXR7On2w" />
@@ -49,7 +49,7 @@ function MyApp({ Component, pageProps }: AppProps) {
               "@type": "SoftwareApplication",
               "name": "ScreenBlink",
               "description": "Intelligent blink tracking software to combat digital eye strain, dry eyes, and computer vision syndrome. Helps reduce eye strain and prevent red eyes from prolonged screen time.",
-              "url": "https://screenblink.com/",
+              "url": "https://screenblink.vercel.app/",
               "applicationCategory": "HealthApplication",
               "operatingSystem": "Windows, macOS",
               "offers": {
