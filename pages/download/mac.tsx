@@ -87,6 +87,25 @@ export default function MacDownloadPage() {
               </div>
             </div>
           </div>
+          {/* YouTube Video Embed for Installation Steps */}
+          <div className="mb-8 bg-slate-900/80 border-2 border-blue-600 rounded-2xl p-5 flex flex-col items-center shadow-lg">
+            <div className="w-full max-w-xl aspect-video rounded-lg overflow-hidden border border-slate-700 mb-3">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/EiCXrErLr3U"
+                title="ScreenBlink Mac Installation Steps"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
+            </div>
+            <div className="flex items-center space-x-2">
+              <svg className="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a2.994 2.994 0 0 0-2.107-2.12C19.077 3.5 12 3.5 12 3.5s-7.077 0-9.391.566A2.994 2.994 0 0 0 .502 6.186C0 8.5 0 12 0 12s0 3.5.502 5.814a2.994 2.994 0 0 0 2.107 2.12C4.923 20.5 12 20.5 12 20.5s7.077 0 9.391-.566a2.994 2.994 0 0 0 2.107-2.12C24 15.5 24 12 24 12s0-3.5-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              <span className="text-blue-200 font-semibold text-base">Watch Installation Steps on YouTube</span>
+            </div>
+          </div>
 
           {/* Scroll Indicator */}
           <div className="text-center mb-8">
