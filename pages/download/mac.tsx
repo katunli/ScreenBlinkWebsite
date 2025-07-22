@@ -93,7 +93,7 @@ export default function MacDownloadPage() {
               <iframe
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/EiCXrErLr3U"
+                src="https://www.youtube.com/embed/0Qic80R8TlI"
                 title="ScreenBlink Mac Installation Steps"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
