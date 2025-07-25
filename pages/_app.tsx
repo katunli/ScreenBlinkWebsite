@@ -9,6 +9,12 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         {/* Primary Meta Tags */}
         <title>ScreenBlink - Protect Your Eyes from Digital Eye Strain & Dry Eyes</title>
+        {/* Favicons and Manifest */}
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="title" content="ScreenBlink - Protect Your Eyes from Digital Eye Strain & Dry Eyes" />
         <meta name="description" content="Combat digital eye strain, dry eyes, and computer vision syndrome with intelligent blink tracking. Free software to reduce eye strain and prevent red eyes from screen time." />
         <meta name="keywords" content="digital eye strain, dry eyes, computer strain, red eyes, eye strain relief, computer vision syndrome, blink tracking, eye health, screen time, eye protection, dry eye treatment, eye strain symptoms, computer eye strain, reduce eye strain" />
