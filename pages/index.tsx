@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Download, Eye, Monitor, Shield, Zap, ArrowRight, Menu, Settings } from 'lucide-react';
+import { Download, Eye, Monitor, Shield, Zap, ArrowRight, Menu, Settings, HelpCircle, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
@@ -50,7 +50,7 @@ export default function ScreenBlinkHomepage() {
     {
       icon: <Eye className="w-8 h-8" />,
       title: "Blink Tracking",
-      description: "Shows a reminder if the camera has not detected a blink in a certain amount of time"
+      description: "Get gentle reminders if you haven't blinked in a while — detected using your camera."
     },
     {
       icon: <Zap className="w-8 h-8" />,
@@ -60,13 +60,44 @@ export default function ScreenBlinkHomepage() {
     {
       icon: <Settings className="w-8 h-8" />,
       title: "Customize",
-      description: "Determine the position, size, color, text, and transparency of your reminders"
+      description: "Personalize how your reminders look — adjust their position, size, color, text, and transparency."
     },
     {
       icon: <Shield className="w-8 h-8" />,
       title: "Eye Protection",
-      description: "Pomodoro timer with gentle eye exercises every couple of minutes to reduce eye strain and dry eyes"
+      description: "Boost your focus and protect your eyes with a Pomodoro timer that includes quick, gentle eye exercises."
     },
+  ];
+
+  const faqs = [
+    {
+      question: "How does ScreenBlink prevent dry eyes and eye strain?",
+      answer: "ScreenBlink tracks your blink rate in real-time. When you're not blinking enough (which happens during screen focus), it gently reminds you to blink more frequently. This helps maintain proper eye moisture and prevents dry eye syndrome."
+    },
+    {
+      question: "Is ScreenBlink free to use?",
+      answer: "Yes, ScreenBlink is completely free to download and use. There are no hidden costs or premium features - it's our commitment to making eye strain relief accessible to everyone."
+    },
+    {
+      question: "Will ScreenBlink slow down my computer?",
+      answer: "No, ScreenBlink is designed to be lightweight and efficient. It runs in the background with minimal system resources, so you won't notice any performance impact while getting eye strain relief."
+    },
+    {
+      question: "What operating systems does ScreenBlink support?",
+      answer: "ScreenBlink is available for both Windows (Windows 10 and 11) and macOS (macOS 11 and later). Although it only runs on ARM Macs at the moment."
+    },
+    {
+      question: "What is digital eye strain and how does ScreenBlink help?",
+      answer: "Digital eye strain, also known as Computer Vision Syndrome, occurs when your eyes work hard to focus on screens for extended periods. ScreenBlink monitors your blink rate and provides reminders to prevent dry eyes and reduce eye strain symptoms."
+    },
+    {
+      question: "How does the 20-20-20 rule work with ScreenBlink?",
+      answer: "The 20-20-20 rule suggests looking at something 20 feet away for 20 seconds every 20 minutes. ScreenBlink implements this automatically by monitoring your screen time and providing gentle reminders to take breaks and do eye exercises, helping reduce computer strain."
+    },
+    {
+      question: "How does ScreenBlink protect my privacy?",
+      answer: "ScreenBlink processes all data locally on your device. No images or personal data are ever recorded or sent anywhere. The software only monitors blink patterns to provide eye strain relief and dry eye treatment. It can even be used without an internet connection."
+    }
   ];
 
   return (
@@ -83,11 +114,8 @@ export default function ScreenBlinkHomepage() {
           </div>
           <div className="hidden md:flex space-x-6 lg:space-x-8">
             <Link href="#features" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">Features</Link>
-            <Link href="#about" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">About</Link>
+            <Link href="#about" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">FAQ</Link>
             <Link href="/eye-strain-guide" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">Eye Strain Guide</Link>
-            <Link href="/faq" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">FAQ</Link>
-            <Link href="/download/windows" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">Windows</Link>
-            <Link href="/download/mac" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">Mac</Link>
           </div>
           <Sheet open={isSheetOpen} onOpenChange={handleSheetOpenChange}>
             <SheetTrigger asChild>
@@ -120,19 +148,13 @@ export default function ScreenBlinkHomepage() {
                     onClick={() => handleSectionClick('about')}
                     className="block w-full text-left text-slate-300 hover:text-white transition-colors py-3 border-b border-slate-700/30 text-lg"
                   >
-                    About
+                    FAQ
                   </button>
                   <Link 
                     href="/eye-strain-guide" 
                     className="block text-slate-300 hover:text-white transition-colors py-3 border-b border-slate-700/30 text-lg"
                   >
                     Eye Strain Guide
-                  </Link>
-                  <Link 
-                    href="/faq" 
-                    className="block text-slate-300 hover:text-white transition-colors py-3 border-b border-slate-700/30 text-lg"
-                  >
-                    FAQ
                   </Link>
                 </div>
                 
@@ -211,43 +233,29 @@ export default function ScreenBlinkHomepage() {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-white px-2 tracking-tight">Understanding Digital Eye Strain & Dry Eyes</h2>
+              <div className="flex items-center justify-center space-x-3 mb-4">
+                <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+                  <HelpCircle className="w-6 h-6 text-white" />
+                </div>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white px-2 tracking-tight">Frequently Asked Questions</h2>
+              </div>
+              <p className="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto">
+                Everything you need to know about ScreenBlink, digital eye strain, dry eyes, and computer vision syndrome
+              </p>
             </div>
 
-            <div className="space-y-6 sm:space-y-8">
-              <div className="bg-slate-800/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-slate-700/30">
-                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-blue-300 flex items-center">
-                  <Monitor className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 flex-shrink-0" />
-                  <span className="leading-tight">What is Digital Eye Strain?</span>
-                </h3>
-                <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-                  Digital eye strain, also known as Computer Vision Syndrome, affects millions of people who spend extended periods looking at digital screens. Symptoms include dry eyes, blurred vision, headaches, neck pain, and red eyes. The average person blinks 15-20 times per minute, but this can drop to 5-7 when focused on screens, leading to computer strain and eye strain symptoms.
-                </p>
-              </div>
-
-              <div className="bg-slate-800/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-slate-700/30">
-                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-blue-300 flex items-center">
-                  <Eye className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 flex-shrink-0" />
-                  <span className="leading-tight">The Importance of Blinking for Eye Health</span>
-                </h3>
-                <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-                  Blinking is essential for eye health as it spreads tears across the eye surface, providing moisture and removing debris. Reduced blink rates during screen time lead to dry eye syndrome, causing discomfort, red eyes, and potentially long-term eye health issues. ScreenBlink helps restore natural blinking patterns and reminds you to take necessary breaks to prevent computer strain and provide eye strain relief.
-                </p>
-              </div>
-
-              <div className="bg-slate-800/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-slate-700/30">
-                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-blue-300">How ScreenBlink Prevents Eye Strain & Dry Eyes</h3>
-                <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-                  Our intelligent monitoring system tracks your blinks in real-time and provides gentle reminders when you need to blink more or take a break. By following the 20-20-20 rule and maintaining healthy blinking habits, you can significantly reduce eye strain, prevent dry eyes, and maintain better eye health throughout your workday. ScreenBlink is your comprehensive solution for computer vision syndrome and eye strain relief.
-                </p>
-              </div>
-
-              <div className="bg-slate-800/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-slate-700/30">
-                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-blue-300">Common Eye Strain Symptoms We Help With</h3>
-                <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-                  ScreenBlink addresses the most common symptoms of digital eye strain: dry eyes, red eyes, blurred vision, headaches, neck and shoulder pain, and difficulty focusing. Our software provides targeted eye strain relief by monitoring your blink rate and encouraging healthy screen habits to prevent computer strain and reduce the impact of prolonged screen time on your eye health. <Link href="/faq" className="text-blue-300 hover:text-blue-200 underline">Learn more in our FAQ</Link> or read our <Link href="/blog/eye-strain-prevention" className="text-blue-300 hover:text-blue-200 underline">comprehensive prevention guide</Link>.
-                </p>
-              </div>
+            <div className="space-y-6">
+              {faqs.map((faq, index) => (
+                <div key={index} className="bg-slate-800/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-slate-700/30">
+                  <h3 className="text-xl sm:text-2xl font-bold mb-4 text-white flex items-start">
+                    <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 mr-3 text-blue-400 mt-1 flex-shrink-0" />
+                    <span>{faq.question}</span>
+                  </h3>
+                  <p className="text-slate-300 text-base sm:text-lg leading-relaxed ml-8 sm:ml-9">
+                    {faq.answer}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
