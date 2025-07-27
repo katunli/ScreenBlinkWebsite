@@ -1,14 +1,50 @@
 import React, { useState, useEffect } from 'react';
-import { Download, Eye, Monitor, Shield, Clock, Zap, ChevronDown, ArrowRight } from 'lucide-react';
+import { Download, Eye, Monitor, Shield, Clock, Zap, ChevronDown, ArrowRight, Menu } from 'lucide-react';
 import Link from 'next/link';
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
+import { Button } from '@/components/ui/button';
 
 export default function ScreenBlinkHomepage() {
   const [isVisible, setIsVisible] = useState(false);
-  const [activeTab, setActiveTab] = useState('overview');
+  const [isSheetOpen, setIsSheetOpen] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
+
+  useEffect(() => {
+    // Prevent body scroll when sidebar is open
+    if (isSheetOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isSheetOpen]);
+
+  const handleSectionClick = (sectionId: string) => {
+    // Close the sidebar first
+    setIsSheetOpen(false);
+    
+    // Then scroll to the section with a small delay to ensure sidebar is closed
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }, 150);
+  };
+
+  const handleSheetOpenChange = (open: boolean) => {
+    setIsSheetOpen(open);
+  };
 
   const features = [
     {
@@ -53,11 +89,70 @@ export default function ScreenBlinkHomepage() {
             <Link href="/download/windows" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">Windows</Link>
             <Link href="/download/mac" className="text-slate-300 hover:text-white transition-colors text-sm lg:text-base">Mac</Link>
           </div>
-          <button className="md:hidden p-2 text-slate-300 hover:text-white">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+          <Sheet open={isSheetOpen} onOpenChange={handleSheetOpenChange}>
+            <SheetTrigger asChild>
+              <Button variant="ghost" className="md:hidden p-2 text-slate-300 hover:text-white transition-colors">
+                <Menu className="h-6 w-6" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent 
+              side="right" 
+              className="w-[300px] sm:w-[400px] bg-slate-800 border-slate-700"
+              onOpenAutoFocus={(e) => e.preventDefault()}
+              onCloseAutoFocus={(e) => e.preventDefault()}
+            >
+              <div className="flex flex-col space-y-6 pt-8">
+                <div className="flex items-center space-x-2 mb-6">
+                  <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+                    <Eye className="w-5 h-5 text-white" />
+                  </div>
+                  <span className="text-xl font-bold text-white">ScreenBlink</span>
+                </div>
+                
+                <div className="space-y-4">
+                  <button 
+                    onClick={() => handleSectionClick('features')}
+                    className="block w-full text-left text-slate-300 hover:text-white transition-colors py-3 border-b border-slate-700/30 text-lg"
+                  >
+                    Features
+                  </button>
+                  <button 
+                    onClick={() => handleSectionClick('about')}
+                    className="block w-full text-left text-slate-300 hover:text-white transition-colors py-3 border-b border-slate-700/30 text-lg"
+                  >
+                    About
+                  </button>
+                  <Link 
+                    href="/eye-strain-guide" 
+                    className="block text-slate-300 hover:text-white transition-colors py-3 border-b border-slate-700/30 text-lg"
+                  >
+                    Eye Strain Guide
+                  </Link>
+                  <Link 
+                    href="/faq" 
+                    className="block text-slate-300 hover:text-white transition-colors py-3 border-b border-slate-700/30 text-lg"
+                  >
+                    FAQ
+                  </Link>
+                </div>
+                
+                <div className="pt-6 space-y-3">
+                  <Link 
+                    href="/download/windows" 
+                    className="block bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 px-4 py-3 rounded-lg font-semibold text-white transition-all duration-300 text-center"
+                  >
+                    Download for Windows
+                  </Link>
+                  <Link 
+                    href="/download/mac" 
+                    className="block bg-slate-700 hover:bg-slate-600 px-4 py-3 rounded-lg font-semibold text-white transition-all duration-300 text-center"
+                  >
+                    Download for Mac
+                  </Link>
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
         </nav>
 
         {/* Hero Section */}
