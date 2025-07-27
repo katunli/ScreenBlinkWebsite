@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Download, Eye, Monitor, Shield, Clock, Zap, ChevronDown, ArrowRight, Menu } from 'lucide-react';
+import { Download, Eye, Monitor, Shield, Zap, ArrowRight, Menu, Settings } from 'lucide-react';
 import Link from 'next/link';
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 
 export default function ScreenBlinkHomepage() {
@@ -50,7 +50,7 @@ export default function ScreenBlinkHomepage() {
     {
       icon: <Eye className="w-8 h-8" />,
       title: "Blink Tracking",
-      description: "Real-time monitoring of your blinks to prevent dry eyes and digital eye strain"
+      description: "Shows a reminder if the camera has not detected a blink in a certain amount of time"
     },
     {
       icon: <Zap className="w-8 h-8" />,
@@ -58,14 +58,14 @@ export default function ScreenBlinkHomepage() {
       description: "Runs efficiently in the background without slowing your system"
     },
     {
-      icon: <Clock className="w-8 h-8" />,
-      title: "Smart Reminders",
-      description: "Customizable blink reminders to reduce computer strain and prevent red eyes"
+      icon: <Settings className="w-8 h-8" />,
+      title: "Customize",
+      description: "Determine the position, size, color, text, and transparency of your reminders"
     },
     {
       icon: <Shield className="w-8 h-8" />,
       title: "Eye Protection",
-      description: "Reduce digital eye strain with timed screen break alerts and eye strain relief"
+      description: "Pomodoro timer with gentle eye exercises every couple of minutes to reduce eye strain and dry eyes"
     },
   ];
 
