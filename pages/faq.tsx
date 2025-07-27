@@ -23,7 +23,7 @@ export default function FAQPage() {
     },
     {
       question: "How does the 20-20-20 rule work with ScreenBlink?",
-      answer: "The 20-20-20 rule suggests looking at something 20 feet away for 20 seconds every 20 minutes. ScreenBlink implements this automatically by monitoring your screen time and providing gentle reminders to take breaks, helping reduce computer strain."
+      answer: "The 20-20-20 rule suggests looking at something 20 feet away for 20 seconds every 20 minutes. ScreenBlink implements this automatically by monitoring your screen time and providing gentle reminders to take breaks and do eye exercises, helping reduce computer strain."
     },
     {
       question: "Can ScreenBlink help with red eyes from screen time?",
