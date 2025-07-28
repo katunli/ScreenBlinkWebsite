@@ -323,7 +323,7 @@ export default function ScreenBlinkHomepage() {
                   <h3 className="text-2xl sm:text-3xl font-bold mb-2 text-white">Katun Li</h3>
                   <p className="text-lg sm:text-xl text-blue-300 mb-4">Founder & Developer</p>
                   <p className="text-slate-300 mb-6 max-w-2xl mx-auto lg:mx-0">
-                    After being diagnosed with dry eye and experiencing severe eye strain while working on computers, I could no longer tolerate the discomfort&mdash;so I sought a solution.  I tried many existing apps but found they were either expensive, lacked essential features, or weren't convenient to use. So I built ScreenBlink - a free, feature-rich solution that actually works for real people dealing with digital eye strain and dry eyes.
+                    After being diagnosed with dry eye and experiencing severe eye strain while working on computers, I could no longer tolerate the discomfort&mdash;so I sought a solution.  I tried many existing apps but found they were either expensive, lacked essential features, or weren&apos;t convenient to use. So I built ScreenBlink - a free, feature-rich solution that actually works for real people dealing with digital eye strain and dry eyes.
                   </p>
                   
                   {/* Social Links */}
