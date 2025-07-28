@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Eye, Monitor, Clock, AlertTriangle, CheckCircle, ArrowRight, Download } from 'lucide-react';
 
 export default function EyeStrainGuide() {
@@ -67,8 +68,14 @@ export default function EyeStrainGuide() {
           {/* Header */}
           <div className="text-center mb-8 sm:mb-12">
             <div className="flex items-center justify-center space-x-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-                <Eye className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center">
+                <Image 
+                  src="/logo.png" 
+                  alt="ScreenBlink Logo" 
+                  width={40} 
+                  height={40} 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">Complete Guide to Digital Eye Strain & Dry Eyes</h1>
             </div>
@@ -247,7 +254,13 @@ export default function EyeStrainGuide() {
           {/* ScreenBlink Solution */}
           <div className="bg-gradient-to-r from-blue-900/60 to-slate-800/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-blue-700/30 mb-8">
             <h2 className="text-2xl font-bold mb-6 text-white flex items-center">
-              <Eye className="w-6 h-6 mr-3 text-blue-400" />
+              <Image 
+                src="/logo.png" 
+                alt="ScreenBlink Logo" 
+                width={24} 
+                height={24} 
+                className="mr-3 object-contain"
+              />
               How ScreenBlink Provides Eye Strain Relief
             </h2>
             <div className="text-slate-300 space-y-4">
