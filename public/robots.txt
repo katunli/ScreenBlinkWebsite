@@ -1,8 +1,8 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
-Sitemap: https://screenblink.vercel.app/sitemap.xml
+# Sitemap
+Sitemap: https://screenblink.org/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1 
