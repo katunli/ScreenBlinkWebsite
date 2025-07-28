@@ -309,7 +309,7 @@ export default function ScreenBlinkHomepage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 text-white px-2 tracking-tight">Meet the Founder</h2>
             <p className="text-lg sm:text-xl text-slate-300 mb-8 sm:mb-12 max-w-2xl mx-auto px-4">
-              ScreenBlink was created with a mission to help people protect their eyes in our digital world
+              From a frustrated patient to a developer who built a solution
             </p>
             
             <div className="bg-gradient-to-r from-slate-800/80 to-blue-900/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-slate-700/50">
@@ -323,9 +323,7 @@ export default function ScreenBlinkHomepage() {
                   <h3 className="text-2xl sm:text-3xl font-bold mb-2 text-white">Katun Li</h3>
                   <p className="text-lg sm:text-xl text-blue-300 mb-4">Founder & Developer</p>
                   <p className="text-slate-300 mb-6 max-w-2xl mx-auto lg:mx-0">
-                    I created ScreenBlink to solve my own eye strain problems while working long hours on screens. 
-                    What started as a personal solution has grown into a tool that helps thousands of people protect their eyes 
-                    from digital eye strain and dry eyes.
+                    After being diagnosed with dry eye and experiencing severe eye strain while working on computers, I could no longer tolerate the discomfort&mdash;so I sought a solution.  I tried many existing apps but found they were either expensive, lacked essential features, or weren't convenient to use. So I built ScreenBlink - a free, feature-rich solution that actually works for real people dealing with digital eye strain and dry eyes.
                   </p>
                   
                   {/* Social Links */}
