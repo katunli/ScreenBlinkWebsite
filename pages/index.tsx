@@ -128,8 +128,14 @@ export default function ScreenBlinkHomepage() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-slate-700/20"></div>
         <nav className="relative z-10 container mx-auto px-4 sm:px-6 py-4 sm:py-6 flex items-center justify-between">
           <div className="flex items-center space-x-2 sm:space-x-3">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-              <Eye className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center">
+              <Image 
+                src="/logo.png" 
+                alt="ScreenBlink Logo" 
+                width={40} 
+                height={40} 
+                className="w-full h-full object-contain"
+              />
             </div>
             <span className="text-xl sm:text-2xl font-bold text-white tracking-tight">ScreenBlink</span>
           </div>
@@ -152,8 +158,14 @@ export default function ScreenBlinkHomepage() {
             >
               <div className="flex flex-col space-y-6 pt-8">
                 <div className="flex items-center space-x-2 mb-6">
-                  <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-                    <Eye className="w-5 h-5 text-white" />
+                  <div className="w-8 h-8 rounded-lg flex items-center justify-center">
+                    <Image 
+                      src="/logo.png" 
+                      alt="ScreenBlink Logo" 
+                      width={32} 
+                      height={32} 
+                      className="w-full h-full object-contain"
+                    />
                   </div>
                   <span className="text-xl font-bold text-white">ScreenBlink</span>
                 </div>
@@ -430,8 +442,14 @@ export default function ScreenBlinkHomepage() {
       <footer className="py-12 bg-slate-900/80 border-t border-slate-700/50">
         <div className="container mx-auto px-6 text-center">
           <div className="flex items-center justify-center space-x-3 mb-6">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-              <Eye className="w-5 h-5 text-white" />
+            <div className="w-8 h-8 rounded-lg flex items-center justify-center">
+              <Image 
+                src="/logo.png" 
+                alt="ScreenBlink Logo" 
+                width={32} 
+                height={32} 
+                className="w-full h-full object-contain"
+              />
             </div>
             <span className="text-xl font-bold text-white">ScreenBlink</span>
           </div>
