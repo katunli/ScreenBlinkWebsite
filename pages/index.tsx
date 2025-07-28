@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Download, Eye, Monitor, Shield, Zap, ArrowRight, Menu, Settings, HelpCircle, CheckCircle } from 'lucide-react';
+import { Download, Eye, Monitor, Shield, Zap, ArrowRight, Menu, Settings, HelpCircle, CheckCircle, CirclePlay, BellRing, CameraOff, Linkedin, Github, Mail, Globe } from 'lucide-react';
 import Link from 'next/link';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
@@ -50,7 +50,7 @@ export default function ScreenBlinkHomepage() {
     {
       icon: <Eye className="w-8 h-8" />,
       title: "Blink Tracking",
-      description: "Get gentle reminders if you haven't blinked in a while — detected using your camera."
+      description: "Get popup reminders if you haven't blinked in a while — detected using your camera."
     },
     {
       icon: <Zap className="w-8 h-8" />,
@@ -59,13 +59,33 @@ export default function ScreenBlinkHomepage() {
     },
     {
       icon: <Settings className="w-8 h-8" />,
-      title: "Customize",
+      title: "Customization",
       description: "Personalize how your reminders look — adjust their position, size, color, text, and transparency."
     },
     {
       icon: <Shield className="w-8 h-8" />,
       title: "Eye Protection",
       description: "Boost your focus and protect your eyes with a Pomodoro timer that includes quick, gentle eye exercises."
+    },
+    {
+      icon: <Monitor className="w-8 h-8" />,
+      title: "Fullscreen Support",
+      description: "Works seamlessly with fullscreen games, videos, and applications — never miss an eye care reminder."
+    },
+    {
+      icon: <CirclePlay className="w-8 h-8" />,
+      title: "Keyboard Shortcuts",
+      description: "Use custom keyboard shortcuts to start and stop reminders instantly without touching the UI."
+    },
+    {
+      icon: <BellRing className="w-8 h-8" />,
+      title: "Sound Notifications",
+      description: "Get audio alerts for reminders and eye exercises — perfect for when you're focused on other tasks."
+    },
+    {
+      icon: <CameraOff className="w-8 h-8" />,
+      title: "Simple Reminders",
+      description: "Option for simple popup reminders without camera tracking"
     },
   ];
 
@@ -184,7 +204,7 @@ export default function ScreenBlinkHomepage() {
               Stop Digital Eye Strain & Dry Eyes
             </h1>
             <p className="text-lg sm:text-xl lg:text-2xl text-slate-300 mb-8 sm:mb-12 max-w-xs sm:max-w-2xl lg:max-w-3xl mx-auto leading-relaxed px-4">
-              Combat computer vision syndrome, dry eyes, and red eyes with intelligent blink tracking. Your solution for <Link href="/eye-strain-guide" className="text-blue-300 hover:text-blue-200 underline">eye strain relief</Link> and computer strain prevention.
+              Your solution for <Link href="/eye-strain-guide" className="text-blue-300 hover:text-blue-200 underline">eye strain relief</Link> and dry eye prevention.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
               <Link href="/download/windows" className="w-full sm:w-auto group bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold text-base sm:text-lg transition-all duration-300 flex items-center justify-center space-x-3 shadow-lg hover:shadow-xl hover:scale-105">
@@ -208,7 +228,7 @@ export default function ScreenBlinkHomepage() {
       <section id="features" className="py-12 sm:py-16 lg:py-20 bg-slate-800/50">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-white px-2 tracking-tight">Your Solution for Eye Strain Relief</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-white px-2 tracking-tight">ScreenBlink Features</h2>
             <p className="text-lg sm:text-xl text-slate-300 max-w-xl sm:max-w-2xl mx-auto px-4">
               Advanced eye care technology designed to combat dry eyes, computer strain, and digital eye strain
             </p>
@@ -283,12 +303,81 @@ export default function ScreenBlinkHomepage() {
         </div>
       </section>
 
+      {/* Founder Section */}
+      <section className="py-12 sm:py-16 lg:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 text-white px-2 tracking-tight">Meet the Founder</h2>
+            <p className="text-lg sm:text-xl text-slate-300 mb-8 sm:mb-12 max-w-2xl mx-auto px-4">
+              ScreenBlink was created with a mission to help people protect their eyes in our digital world
+            </p>
+            
+            <div className="bg-gradient-to-r from-slate-800/80 to-blue-900/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-slate-700/50">
+              <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8">
+                {/* Profile Image Placeholder */}
+                <div className="w-24 h-24 sm:w-32 sm:h-32 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-2xl sm:text-3xl font-bold text-white">KL</span>
+                </div>
+                
+                <div className="flex-1 text-center lg:text-left">
+                  <h3 className="text-2xl sm:text-3xl font-bold mb-2 text-white">Katun Li</h3>
+                  <p className="text-lg sm:text-xl text-blue-300 mb-4">Founder & Developer</p>
+                  <p className="text-slate-300 mb-6 max-w-2xl mx-auto lg:mx-0">
+                    I created ScreenBlink to solve my own eye strain problems while working long hours on screens. 
+                    What started as a personal solution has grown into a tool that helps thousands of people protect their eyes 
+                    from digital eye strain and dry eyes.
+                  </p>
+                  
+                  {/* Social Links */}
+                  <div className="flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-4">
+                    <a 
+                      href="https://linkedin.com/in/katun-li-208193297" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center space-x-2 bg-slate-700 hover:bg-slate-600 px-4 py-2 rounded-lg font-medium text-white transition-all duration-300 hover:scale-105"
+                    >
+                      <Linkedin className="w-4 h-4" />
+                      <span>LinkedIn</span>
+                    </a>
+                    <a 
+                      href="https://github.com/katunli" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center space-x-2 bg-slate-700 hover:bg-slate-600 px-4 py-2 rounded-lg font-medium text-white transition-all duration-300 hover:scale-105"
+                    >
+                      <Github className="w-4 h-4" />
+                      <span>GitHub</span>
+                    </a>
+                    <a 
+                      href="mailto:katunjieli@gmail.com" 
+                      className="inline-flex items-center space-x-2 bg-slate-700 hover:bg-slate-600 px-4 py-2 rounded-lg font-medium text-white transition-all duration-300 hover:scale-105"
+                    >
+                      <Mail className="w-4 h-4" />
+                      <span>Email</span>
+                    </a>
+                    <a 
+                      href="https://katunli.vercel.app/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center space-x-2 bg-slate-700 hover:bg-slate-600 px-4 py-2 rounded-lg font-medium text-white transition-all duration-300 hover:scale-105"
+                    >
+                      <Globe className="w-4 h-4" />
+                      <span>Website</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Download Section */}
       <section id="download" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-slate-800/80 to-blue-900/80">
         <div className="container mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 text-white px-2 tracking-tight">Ready to Protect Your Eyes from Digital Eye Strain?</h2>
           <p className="text-lg sm:text-xl text-slate-300 mb-8 sm:mb-12 max-w-xl sm:max-w-2xl mx-auto px-4">
-            Join thousands of users who have improved their eye health and found relief from dry eyes, computer strain, and red eyes with ScreenBlink
+            Join many others who have improved their eye health and found relief from dry eyes, computer strain, and red eyes with ScreenBlink
           </p>
           
           <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 justify-center items-stretch max-w-sm sm:max-w-2xl mx-auto">
