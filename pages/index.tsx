@@ -315,6 +315,23 @@ export default function ScreenBlinkHomepage() {
         </div>
       </section>
 
+      {/* Contact Section */}
+      <section className="py-8 bg-slate-800/30">
+        <div className="container mx-auto px-4 sm:px-6 text-center">
+          <div className="max-w-2xl mx-auto">
+            <p className="text-slate-300 text-sm sm:text-base">
+              Questions or concerns? Email us at{' '}
+              <a 
+                href="mailto:screenblinkteam@gmail.com" 
+                className="text-blue-300 hover:text-blue-200 underline"
+              >
+                screenblinkteam@gmail.com
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-12 bg-slate-900/80 border-t border-slate-700/50">
         <div className="container mx-auto px-6 text-center">
