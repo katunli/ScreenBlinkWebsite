@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Download, Eye, Monitor, Shield, Zap, ArrowRight, Menu, Settings, HelpCircle, CheckCircle, CirclePlay, BellRing, CameraOff, Linkedin, Github, Mail, Globe } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 
@@ -314,10 +315,16 @@ export default function ScreenBlinkHomepage() {
             
             <div className="bg-gradient-to-r from-slate-800/80 to-blue-900/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-slate-700/50">
               <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8">
-                {/* Profile Image Placeholder */}
-                <div className="w-24 h-24 sm:w-32 sm:h-32 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl sm:text-3xl font-bold text-white">KL</span>
-                </div>
+                  {/* Profile Image */}
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full overflow-hidden flex-shrink-0">
+                    <Image 
+                      src="/headshot.jpeg" 
+                      alt="Katun Li - Founder of ScreenBlink" 
+                      width={128} 
+                      height={128} 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 
                 <div className="flex-1 text-center lg:text-left">
                   <h3 className="text-2xl sm:text-3xl font-bold mb-2 text-white">Katun Li</h3>
