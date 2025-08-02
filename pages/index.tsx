@@ -261,6 +261,31 @@ export default function ScreenBlinkHomepage() {
         </div>
       </section>
 
+      {/* Video Demo Section */}
+      <section className="py-12 sm:py-16 lg:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 text-white px-2 tracking-tight">See ScreenBlink in Action</h2>
+            <p className="text-lg sm:text-xl text-slate-300 mb-8 sm:mb-12 max-w-2xl mx-auto px-4">
+              Watch how ScreenBlink helps prevent digital eye strain and dry eyes with its intelligent blink tracking and gentle reminders
+            </p>
+            
+            <div className="relative w-full max-w-4xl mx-auto">
+              <div className="relative aspect-video bg-slate-800 rounded-2xl overflow-hidden shadow-2xl">
+                <iframe
+                  src="https://www.youtube.com/embed/0E4-tmWzlIU"
+                  title="ScreenBlink App Demo - Digital Eye Strain Prevention"
+                  className="absolute inset-0 w-full h-full"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section id="about" className="py-12 sm:py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6">
