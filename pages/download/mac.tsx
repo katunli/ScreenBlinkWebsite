@@ -18,10 +18,10 @@ export default function MacDownloadPage() {
   };
 
   useEffect(() => {
-    // Auto-download the file
+    // Auto-download the latest release
     const link = document.createElement('a');
-    link.href = 'https://github.com/katunli/ScreenBlink/releases/download/v1.0.0/ScreenBlink-1.0.0-arm64.dmg';
-    link.download = 'ScreenBlink-1.0.0-arm64.dmg';
+    link.href = 'https://github.com/katunli/ScreenBlink/releases/latest/download/ScreenBlink-arm64.dmg';
+    link.download = 'ScreenBlink-arm64.dmg';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -55,7 +55,7 @@ export default function MacDownloadPage() {
               <CheckCircle className="w-6 h-6 text-green-400" />
               <div>
                 <h3 className="text-lg font-semibold text-green-300">Download Started</h3>
-                <p className="text-green-200">ScreenBlink-1.0.0-arm64.dmg is downloading to your Downloads folder</p>
+                <p className="text-green-200">ScreenBlink-arm64.dmg is downloading to your Downloads folder</p>
               </div>
             </div>
           </div>
@@ -127,7 +127,7 @@ export default function MacDownloadPage() {
                 Open the DMG
               </h2>
               <div className="text-slate-300">
-                <p>Double-click <code className="bg-slate-700 px-2 py-1 rounded">ScreenBlink-1.0.0-arm64.dmg</code> in Downloads, or open it from the top right of your browser</p>
+                <p>Double-click <code className="bg-slate-700 px-2 py-1 rounded">ScreenBlink-arm64.dmg</code> in Downloads, or open it from the top right of your browser</p>
               </div>
             </div>
 

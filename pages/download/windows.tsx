@@ -5,10 +5,10 @@ import Link from 'next/link';
 
 export default function WindowsDownloadPage() {
   useEffect(() => {
-    // Auto-download the file
+    // Auto-download the latest release
     const link = document.createElement('a');
-    link.href = 'https://github.com/katunli/ScreenBlink/releases/download/v1.0.0/ScreenBlink.Setup.1.0.0.exe';
-    link.download = 'ScreenBlink.Setup.1.0.0.exe';
+    link.href = 'https://github.com/katunli/ScreenBlink/releases/latest/download/ScreenBlink.Setup.exe';
+    link.download = 'ScreenBlink.Setup.exe';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -42,7 +42,7 @@ export default function WindowsDownloadPage() {
               <CheckCircle className="w-6 h-6 text-green-400" />
               <div>
                 <h3 className="text-lg font-semibold text-green-300">Download Started</h3>
-                <p className="text-green-200">ScreenBlink.Setup.1.0.0.exe is downloading to your Downloads folder</p>
+                <p className="text-green-200">ScreenBlink.Setup.exe is downloading to your Downloads folder</p>
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@ export default function WindowsDownloadPage() {
                 Open the EXE
               </h2>
               <div className="text-slate-300">
-                <p>Double-click <code className="bg-slate-700 px-2 py-1 rounded">ScreenBlink.Setup.1.0.0.exe</code> in Downloads, or open it from the top right of your browser</p>
+                <p>Double-click <code className="bg-slate-700 px-2 py-1 rounded">ScreenBlink.Setup.exe</code> in Downloads, or open it from the top right of your browser</p>
               </div>
             </div>
 
